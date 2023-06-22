@@ -91,6 +91,7 @@ def compare_time(tag_time, current_time, execution_interval=15):
         execution_interval
     )
 
+    # pylint: disable=chained-comparison
     return current_time >= tag_time and current_time < tag_time + execution_interval
 
 
